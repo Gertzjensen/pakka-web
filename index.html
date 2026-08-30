@@ -24,12 +24,17 @@ h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;color:#5c6b62
 .langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:1em 0}
 .lang{background:#fff;border:1px solid #e2ded3;border-radius:11px;padding:9px 13px;font-size:.93rem}
 .lang b{display:block}.lang span{color:#8a978f;font-size:.86rem}
+.ask{background:#fff;border:1px solid #e2ded3;border-radius:16px;padding:22px 24px;margin:2.4em 0}
+.ask h3{margin:0 0 .4em;font-size:1.15rem}
+.ask p{margin:0 0 1em;color:#5c6b62}
+.askbtn{display:inline-block;padding:13px 24px;background:#1f6f52;color:#fff;border-radius:12px;text-decoration:none;font-weight:600}
+.askfine{font-size:.86rem;color:#8a978f;margin:.9em 0 0}
 footer{color:#8a978f;font-size:.9rem;margin-top:48px}
 @media(prefers-color-scheme:dark){
  body{background:#121815;color:#e8ede9}
- .card,.grid a,.lang{background:#1b2420;border-color:#2b3a33;color:#e8ede9}
+ .card,.grid a,.lang,.ask{background:#1b2420;border-color:#2b3a33;color:#e8ede9}
  h2{color:#9bbcac;border-color:#2b3a33}
- .card span,.tag{color:#9bbcac}.lang span{color:#7d8f85}}
+ .card span,.tag,.ask p{color:#9bbcac}.lang span{color:#7d8f85}}
 </style></head><body><div class="wrap">
 
 <h1>A packing list for every person</h1>
@@ -80,6 +85,15 @@ Pakka follows your phone's language, and you can change it inside the app at any
 <div class="lang"><b>简体中文</b><span>每人一份清单</span></div>
 <div class="lang" dir="rtl"><b>العربية</b><span>قائمة لكل فرد دون إنترنت</span></div>
 <div class="lang" dir="rtl"><b>اردو</b><span>ہر فرد کے لیے فہرست</span></div>
+</div>
+
+
+<div class="ask">
+<h3>Do you need Pakka on Android?</h3>
+<p>Pakka is on iPhone and iPad today. If enough people ask for Android, we will build it —
+so tell us, and we will let you know when it is ready.</p>
+<a class="askbtn" href="mailto:support@getpakka.app?subject=Pakka%20Android&amp;body=I%20would%20like%20Pakka%20on%20Android.%0A%0A%28Just%20send%20this%20email%20%E2%80%94%20nothing%20else%20needed.%29">Tell us: I want Android</a>
+<p class="askfine">One email. We only use it to tell you when Android is ready — nothing else, ever.</p>
 </div>
 
 <footer>Every list scales to adults, children and babies — and the days you are away.
