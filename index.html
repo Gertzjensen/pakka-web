@@ -1,18 +1,88 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Packing Lists for Every Trip — Pakka</title>
-<meta name="description" content="Free packing lists for 22 trip types — holidays, ski, camping, Umrah & Hajj, hospital bag and more. Tailored, offline, 23 languages.">
-<style>*{box-sizing:border-box}body{font:17px/1.6 -apple-system,system-ui,sans-serif;color:#1c2b25;background:#f7f5ef;margin:0}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}a{color:#1f6f52}
-h1{font-size:2rem;margin:.2em 0}.tag{color:#5c6b62;font-size:1.15rem;margin:0 0 1em}
-.count{display:inline-block;background:#1f6f52;color:#fff;border-radius:999px;padding:4px 14px;font-weight:600;font-size:.95rem}
-h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;color:#5c6b62;margin:1.6em 0 .4em;border-bottom:1px solid #e2ded3;padding-bottom:.3em}
-ul{list-style:none;padding:0;margin:0}li{padding:6px 0 6px 26px;position:relative}li:before{content:"○";position:absolute;left:0;color:#9bbcac}
-.cta{display:block;margin:32px 0;padding:18px 22px;background:#1f6f52;color:#fff;border-radius:16px;text-decoration:none;font-weight:600;text-align:center}
-.grid{display:flex;flex-wrap:wrap;gap:10px;margin:1.5em 0}.grid a{background:#fff;border:1px solid #e2ded3;border-radius:12px;padding:10px 14px;text-decoration:none;color:#1c2b25}
-footer{color:#8a978f;font-size:.9rem;margin-top:40px}
-@media(prefers-color-scheme:dark){body{background:#121815;color:#e8ede9}.grid a{background:#1b2420;border-color:#2b3a33;color:#e8ede9}h2{color:#9bbcac;border-color:#2b3a33}}</style></head><body><div class="wrap">
-<h1>Packing lists for every trip</h1><p class="tag">Tailored to exactly who's coming. Offline. 23 languages.</p>
-<a class="cta" href="https://apps.apple.com/app/id6800431938">Get Pakka free</a><h2>Holidays</h2><div class='grid'><a href='./sommerhus.html'>Holiday home · 69</a><a href='./camping.html'>Camping trip · 48</a><a href='./sommerferie.html'>Summer holiday · 62</a><a href='./togrejse.html'>Train trip · 46</a><a href='./cruise.html'>Cruise · 43</a><a href='./forretning.html'>Business trip · 43</a><a href='./rejse.html'>City &amp; weekend · 48</a><a href='./festival.html'>Festival · 36</a><a href='./hajj.html'>Hajj · 53</a><a href='./umrah.html'>Umrah · 51</a></div><h2>Active & sport</h2><div class='grid'><a href='./skiferie.html'>Ski holiday · 45</a><a href='./golf.html'>Golf trip · 42</a><a href='./racercykel.html'>Road cycling · 43</a><a href='./mtb.html'>Mountain biking · 44</a><a href='./surf.html'>Surf &amp; kite · 45</a><a href='./vandretur.html'>Hiking trip · 42</a><a href='./fisketur.html'>Fishing trip · 42</a><a href='./jagttur.html'>Hunting trip · 48</a><a href='./staevne.html'>Sports tournament · 27</a></div><h2>Family & kids</h2><div class='grid'><a href='./lejrskole.html'>School trip · 34</a><a href='./dagstur_baby.html'>Day out with baby · 17</a><a href='./foedselstaske.html'>Hospital bag · 19</a></div>
-<footer>Every list scales to adults, children and babies — and the days you're away.<div style="margin-top:14px"><a href="./privacy.html">Privacy</a> · <a href="./support.html">Support</a> · <a href="mailto:support@getpakka.app">Contact</a></div><div style="margin-top:8px">© 2026 Jonas Gertz Jensen</div></footer>
+<meta name="description" content="A personal packing list for everyone in the family, tailored to exactly where you are going. 22 trip types, 23 languages, 100% offline. No account, no tracking.">
+<meta property="og:title" content="Pakka — a packing list for every person">
+<meta property="og:description" content="Add who is coming and Pakka builds a personal list for each of them. 22 trip types, 23 languages, 100% offline.">
+<meta property="og:url" content="https://getpakka.app">
+<style>
+*{box-sizing:border-box}
+body{font:17px/1.6 -apple-system,system-ui,sans-serif;color:#1c2b25;background:#f7f5ef;margin:0}
+.wrap{max-width:820px;margin:0 auto;padding:40px 20px 80px}
+a{color:#1f6f52}
+h1{font-size:2.1rem;line-height:1.2;margin:.1em 0 .3em}
+.tag{color:#5c6b62;font-size:1.2rem;margin:0 0 1.2em;max-width:34em}
+.cta{display:inline-block;margin:8px 0 6px;padding:16px 30px;background:#1f6f52;color:#fff;border-radius:14px;text-decoration:none;font-weight:600}
+.under{color:#8a978f;font-size:.92rem;margin:0 0 8px}
+h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;color:#5c6b62;margin:2.2em 0 .6em;border-bottom:1px solid #e2ded3;padding-bottom:.3em}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.2em 0}
+.card{background:#fff;border:1px solid #e2ded3;border-radius:14px;padding:16px 18px}
+.card b{display:block;margin-bottom:.25em}
+.card span{color:#5c6b62;font-size:.95rem}
+.grid{display:flex;flex-wrap:wrap;gap:10px;margin:1em 0}
+.grid a{background:#fff;border:1px solid #e2ded3;border-radius:12px;padding:10px 14px;text-decoration:none;color:#1c2b25}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:1em 0}
+.lang{background:#fff;border:1px solid #e2ded3;border-radius:11px;padding:9px 13px;font-size:.93rem}
+.lang b{display:block}.lang span{color:#8a978f;font-size:.86rem}
+footer{color:#8a978f;font-size:.9rem;margin-top:48px}
+@media(prefers-color-scheme:dark){
+ body{background:#121815;color:#e8ede9}
+ .card,.grid a,.lang{background:#1b2420;border-color:#2b3a33;color:#e8ede9}
+ h2{color:#9bbcac;border-color:#2b3a33}
+ .card span,.tag{color:#9bbcac}.lang span{color:#7d8f85}}
+</style></head><body><div class="wrap">
+
+<h1>A packing list for every person</h1>
+<p class="tag">Add who is coming, and Pakka builds a personal list for each of them —
+tailored to exactly where you are going, and how long you are away.</p>
+<a class="cta" href="https://apps.apple.com/app/id6800431938">Get Pakka free</a>
+<p class="under">iPhone &amp; iPad · works 100% offline · no account, no tracking</p>
+
+<h2>What Pakka does</h2>
+<div class="feat">
+<div class="card"><b>A list per person</b><span>Babies, children and adults each get their own items, in the right amounts for the days you are away.</span></div>
+<div class="card"><b>Fits the trip</b><span>Beach, ski, cabin, camping, festival, business, pilgrimage — 22 kinds of trip, each with its own list.</span></div>
+<div class="card"><b>Knows the destination</b><span>Plug type and voltage, emergency numbers, currency, expected weather and the time difference.</span></div>
+<div class="card"><b>The essentials stay on top</b><span>Passport, medicine, chargers and cards are pinned above everything else, so they are never scrolled past.</span></div>
+<div class="card"><b>Closes up the house too</b><span>Water off, bins out, plants, post, lights on a timer — the list you always forget half of.</span></div>
+<div class="card"><b>Yours alone</b><span>No account and no tracking. Lists sync through your own private iCloud, which means we never see them.</span></div>
+</div>
+
+<h2>22 kinds of trip</h2>
+<h2>Holidays</h2><div class='grid'><a href='./sommerhus.html'>Holiday home · 69</a><a href='./camping.html'>Camping trip · 48</a><a href='./sommerferie.html'>Summer holiday · 62</a><a href='./togrejse.html'>Train trip · 46</a><a href='./cruise.html'>Cruise · 43</a><a href='./forretning.html'>Business trip · 43</a><a href='./rejse.html'>City &amp; weekend · 48</a><a href='./festival.html'>Festival · 36</a><a href='./hajj.html'>Hajj · 53</a><a href='./umrah.html'>Umrah · 51</a></div>
+<h2>Active & sport</h2><div class='grid'><a href='./skiferie.html'>Ski holiday · 45</a><a href='./golf.html'>Golf trip · 42</a><a href='./racercykel.html'>Road cycling · 43</a><a href='./mtb.html'>Mountain biking · 44</a><a href='./surf.html'>Surf &amp; kite · 45</a><a href='./vandretur.html'>Hiking trip · 42</a><a href='./fisketur.html'>Fishing trip · 42</a><a href='./jagttur.html'>Hunting trip · 48</a><a href='./staevne.html'>Sports tournament · 27</a></div>
+<h2>Family & kids</h2><div class='grid'><a href='./lejrskole.html'>School trip · 34</a><a href='./dagstur_baby.html'>Day out with baby · 17</a><a href='./foedselstaske.html'>Hospital bag · 19</a></div>
+
+<h2>In 23 languages</h2>
+<p class="under" style="margin-bottom:14px">The whole app — every list, every item, every note — not just the buttons.
+Pakka follows your phone's language, and you can change it inside the app at any time.</p>
+<div class="langs">
+<div class="lang"><b>English</b><span>Per-person packing, offline</span></div>
+<div class="lang"><b>Dansk</b><span>Én liste pr. person, offline</span></div>
+<div class="lang"><b>Deutsch</b><span>Packen pro Person, offline</span></div>
+<div class="lang"><b>Svenska</b><span>En lista per person, offline</span></div>
+<div class="lang"><b>Norsk</b><span>Én liste per person, offline</span></div>
+<div class="lang"><b>Nederlands</b><span>Een lijst per persoon, offline</span></div>
+<div class="lang"><b>Français</b><span>Une liste par personne</span></div>
+<div class="lang"><b>Español</b><span>Una lista por persona</span></div>
+<div class="lang"><b>Italiano</b><span>Una lista per persona</span></div>
+<div class="lang"><b>Português</b><span>Uma lista por pessoa</span></div>
+<div class="lang"><b>Suomi</b><span>Lista jokaiselle, offline</span></div>
+<div class="lang"><b>Polski</b><span>Lista dla każdej osoby</span></div>
+<div class="lang"><b>Türkçe</b><span>Kişi başına liste, çevrimdışı</span></div>
+<div class="lang"><b>Русский</b><span>Список для каждого, офлайн</span></div>
+<div class="lang"><b>Bahasa Indonesia</b><span>Daftar per orang, offline</span></div>
+<div class="lang"><b>Bahasa Melayu</b><span>Senarai setiap orang</span></div>
+<div class="lang"><b>Tiếng Việt</b><span>Danh sách cho mỗi người</span></div>
+<div class="lang"><b>हिन्दी</b><span>हर व्यक्ति के लिए सूची</span></div>
+<div class="lang"><b>日本語</b><span>一人ひとりの持ち物リスト</span></div>
+<div class="lang"><b>한국어</b><span>사람마다 짐 목록</span></div>
+<div class="lang"><b>简体中文</b><span>每人一份清单</span></div>
+<div class="lang" dir="rtl"><b>العربية</b><span>قائمة لكل فرد دون إنترنت</span></div>
+<div class="lang" dir="rtl"><b>اردو</b><span>ہر فرد کے لیے فہرست</span></div>
+</div>
+
+<footer>Every list scales to adults, children and babies — and the days you are away.
+<div style="margin-top:14px"><a href="./privacy.html">Privacy</a> · <a href="./support.html">Support</a> · <a href="mailto:support@getpakka.app">Contact</a></div>
+<div style="margin-top:8px">© 2026 Jonas Gertz Jensen</div></footer>
 </div></body></html>
